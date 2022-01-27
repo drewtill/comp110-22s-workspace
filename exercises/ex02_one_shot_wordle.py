@@ -34,7 +34,7 @@ alt_i: int = 0
 while i < len(secret_word):
     # if statement to determine if character is correct
     if secret_word[i] == user_guess[i]:
-        box_color = str(box_color) + str(GREEN_BOX) + " "
+        box_color = str(box_color) + str(GREEN_BOX)
     # else statement begins test to determine if character is found somewhere else or not at all
     else:
         # have to reset variables for each character position
@@ -52,9 +52,9 @@ while i < len(secret_word):
                 alt_i += 1
         # finally the if else puts in the yellow or white box depending on if the bool is True or False.
         if match_wrong_location:
-            box_color = str(box_color) + str(YELLOW_BOX) + " "
+            box_color = str(box_color) + str(YELLOW_BOX)
         else:
-            box_color = str(box_color) + str(WHITE_BOX) + " "
+            box_color = str(box_color) + str(WHITE_BOX)
     i += 1
             
 # this prints out the str that is the emojis
