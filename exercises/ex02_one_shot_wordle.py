@@ -49,13 +49,13 @@ while i < len(secret_word):
             # else block will keep bool False and increase alt_i by one to check next location
             else:
                 match_wrong_location = False
-                alt_i = alt_i + 1
+                alt_i += 1
         # finally the if else puts in the yellow or white box depending on if the bool is True or False.
         if match_wrong_location:
             box_color = str(box_color) + str(YELLOW_BOX) + " "
         else:
             box_color = str(box_color) + str(WHITE_BOX) + " "
-    i = i + 1
+    i += 1
             
 # this prints out the str that is the emojis
 print(box_color)
