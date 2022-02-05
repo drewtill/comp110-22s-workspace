@@ -34,7 +34,7 @@ alt_i: int = 0
 while i < len(secret_word):
     # if statement to determine if character is correct
     if secret_word[i] == user_guess[i]:
-        box_color = str(box_color) + str(GREEN_BOX)
+        box_color = str(box_color) + GREEN_BOX
     # else statement begins test to determine if character is found somewhere else or not at all
     else:
         # have to reset variables for each character position
